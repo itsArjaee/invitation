@@ -84,7 +84,7 @@ const MainPage = () => {
         <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1]">
           <div className="flex justify-center w-full">
             <Image
-              src="/images/yshee-2.jpg"
+              src="/Yshee-2.jpg"
               alt="Yshee 18"
               width={550}
               height={450}
