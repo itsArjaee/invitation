@@ -90,7 +90,7 @@ export default function Cotillions() {
       </div>
         <button
         onClick={() => setShowMore(!showMore)}
-      className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px]"
+      className="text-lg bg-pink-700 cursor-pointer text-white border border-pink-700 px-5 py-2 rounded-md hover:bg-white hover:text-pink-700 transition-colors duration-200 w-[300px]"
       >
         {showMore ? "Hide" : "Cotillions (Click to Show)"}
       </button>

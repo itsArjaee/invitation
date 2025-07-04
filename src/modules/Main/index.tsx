@@ -118,7 +118,7 @@ const MainPage = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSfoPYi5bUUrssRjXyxYYTlxKKV81hOqGyU3t4ZXPAhSXJoYVQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px] text-center block"
+            className="text-lg bg-pink-700 text-white border border-pink-700 px-5 py-2 rounded-md hover:bg-white hover:text-pink-700 transition-colors duration-200 w-[300px] text-center block"
           >
             Join Us! (Click to RSVP)
           </a>
