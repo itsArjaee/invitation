@@ -23,8 +23,8 @@ const MainPage = () => {
       </Head>
       <div className="h-screen w-screen flex items-center flex-col overflow-y-auto min-h-screen">
         <BoxComponent
-          styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[225px]
-          bg-contain sm:bg-cover"
+          styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[285px]
+          bg-contain sm:bg-cover bg-top" 
         />
 
         <BoxComponent>
@@ -83,7 +83,76 @@ const MainPage = () => {
 
 </BoxComponent> */}
         {/* Photo Album ========================================== */}
-        <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1]">
+     
+        <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] bg-[url('/grass2.png')] bg-no-repeat bg-bottom bg-contain">
+          <p className="text-center text-lg sm:text-xl md:text-2xl leading-relaxed font-poppins text-gray-800">
+            🌿✨ <strong>SEE YOU AT</strong> ✨🌿
+          </p>
+          <div className="flex flex-col gap-6 md:gap-8 items-center">
+            <div className="flex justify-center w-full">
+              <Image
+                src="/2.jpg"
+                alt="Yshee 18"
+                width={550}
+                height={450}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+            {/* Image Section */}
+            <div className="flex flex-wrap justify-center gap-4">
+             
+              <Image
+                src="/images/address-2.jpg"
+                alt="Yshee 18"
+                width={150}
+                height={100}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+
+               <Cotillions />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfoPYi5bUUrssRjXyxYYTlxKKV81hOqGyU3t4ZXPAhSXJoYVQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px] text-center block"
+          >
+            Join Us! (Click to RSVP)
+          </a>
+
+            {/* Details Section */}
+            <div className="text-center px-4 max-w-xl">
+              <p className="text-lg font-semibold text-gray-800">
+                📍 <span className="font-bold">Del Rosario Private Resort</span>
+              </p>
+              <p className="text-gray-600">
+                Bypass Road, Gulod Maginao, San Rafael, Bulacan
+              </p>
+              <p className="mt-2 text-base font-medium text-gray-700">
+                📅 August 10 • 6:00 PM
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center w-full">
+            <video
+              className="rounded-xl shadow-lg"
+              width={500}
+              height={440}
+              controls
+              autoPlay
+              muted
+              loop
+            >
+              <source src="/Video.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+             <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] shadow-none">
           <div className="flex justify-center w-full">
             <Image
               src="/Yshee-2.jpg"
@@ -145,63 +214,6 @@ const MainPage = () => {
             />
           </div>
         </BoxComponent>
-        <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] bg-[url('/grass2.png')] bg-no-repeat bg-bottom bg-contain">
-          <p className="text-center text-lg sm:text-xl md:text-2xl leading-relaxed font-poppins text-gray-800">
-            🌿✨ <strong>SEE YOU AT</strong> ✨🌿
-          </p>
-          <div className="flex flex-col gap-6 md:gap-8 items-center">
-            <div className="flex justify-center w-full">
-              <Image
-                src="/2.jpg"
-                alt="Yshee 18"
-                width={550}
-                height={450}
-                className="rounded-xl shadow-lg"
-                priority
-              />
-            </div>
-
-            {/* Image Section */}
-            <div className="flex flex-wrap justify-center gap-4">
-             
-              <Image
-                src="/images/address-2.jpg"
-                alt="Yshee 18"
-                width={500}
-                height={450}
-                className="rounded-xl shadow-lg"
-                priority
-              />
-            </div>
-
-            {/* Details Section */}
-            <div className="text-center px-4 max-w-xl">
-              <p className="text-lg font-semibold text-gray-800">
-                📍 <span className="font-bold">Del Rosario Private Resort</span>
-              </p>
-              <p className="text-gray-600">
-                Bypass Road, Gulod Maginao, San Rafael, Bulacan
-              </p>
-              <p className="mt-2 text-base font-medium text-gray-700">
-                📅 August 10 • 6:00 PM
-              </p>
-            </div>
-          </div>
-
-          <div className="flex justify-center w-full">
-            <video
-              className="rounded-xl shadow-lg"
-              width={500}
-              height={440}
-              controls
-              autoPlay
-              muted
-              loop
-            >
-              <source src="/Video.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
 
           <p className="text-xl sm:text-2xl leading-relaxed text-center text-gray-800 max-w-3xl mx-auto mt-10 px-4">
             Your presence is the greatest gift of all. But if you’d like to
@@ -212,15 +224,7 @@ const MainPage = () => {
             </span>
           </p>
 
-          <Cotillions />
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfoPYi5bUUrssRjXyxYYTlxKKV81hOqGyU3t4ZXPAhSXJoYVQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px] text-center block"
-          >
-            Join Us! (Click to RSVP)
-          </a>
+       
 
           <p className="text-center text-3xl sm:text-4xl font-serif italic text-gray-800 mt-20 mb-12 px-4 animate-fade-in">
             Let’s make it a night to remember{" "}
