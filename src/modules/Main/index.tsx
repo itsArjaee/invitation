@@ -49,7 +49,7 @@ const MainPage = () => {
         <BoxComponent>
           <p className="text-center text-base sm:text-lg md:text-xl font-light text-gray-800 leading-relaxed ">
             👗{" "}
-            <span className="text-3xl font-medium">Dress Code: Fancy-ish!</span>{" "}
+            <span className="text-2xl font-medium">Dress Code: Fancy-ish!</span>{" "}
             <br />
             <br />
             <span className="block text">
@@ -163,19 +163,12 @@ const MainPage = () => {
 
             {/* Image Section */}
             <div className="flex flex-wrap justify-center gap-4">
-              <Image
-                src="/images/address-3.jpg"
-                alt="Yshee 18"
-                width={280}
-                height={180}
-                className="rounded-xl shadow-lg"
-                priority
-              />
+             
               <Image
                 src="/images/address-2.jpg"
                 alt="Yshee 18"
-                width={280}
-                height={180}
+                width={500}
+                height={450}
                 className="rounded-xl shadow-lg"
                 priority
               />
