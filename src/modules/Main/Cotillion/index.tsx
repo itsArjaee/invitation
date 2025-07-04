@@ -44,7 +44,7 @@ export default function Cotillions() {
             className="rounded-md shadow-md"
           />
           <Image
-            src="/4.jpg"
+            src="/images/4.jpg"
             alt="Yshee 18"
             width={280}
             height={180}
@@ -71,7 +71,7 @@ export default function Cotillions() {
 
         <div className="flex flex-col gap-4 mt-4 md:flex-row">
             <Image
-            src="/3.jpg"
+            src="/images/3.jpg"
             alt="Yshee 18"
             width={280}
             height={180}
