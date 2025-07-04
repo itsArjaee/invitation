@@ -59,8 +59,9 @@ export default function Cotillions() {
             height={180}
             className="rounded-md shadow-md"
           />
+          {/* update */}
           <Image
-            src="/6.jpg"
+            src="/images/7.jpg"
             alt="Yshee 18"
             width={280}
             height={180}
@@ -69,20 +70,21 @@ export default function Cotillions() {
         </div>
 
         <div className="flex flex-col gap-4 mt-4 md:flex-row">
-          <Image
-            src="/7.jpg"
-            alt="Yshee 18"
-            width={280}
-            height={180}
-            className="rounded-md shadow-md"
-          />
-          <Image
+            <Image
             src="/3.jpg"
             alt="Yshee 18"
             width={280}
             height={180}
             className="rounded-md shadow-md"
           />
+          <Image
+            src="/images/6.jpg"
+            alt="Yshee 18"
+            width={280}
+            height={180}
+            className="rounded-md shadow-md"
+          />
+        
         </div>
   
       </div>
@@ -90,7 +92,7 @@ export default function Cotillions() {
         onClick={() => setShowMore(!showMore)}
       className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px]"
       >
-        {showMore ? "Hide" : "List of Cotillions"}
+        {showMore ? "Hide" : "Cotillions (Click to Show)"}
       </button>
     </div>
   );

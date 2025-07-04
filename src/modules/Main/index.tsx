@@ -22,7 +22,11 @@ const MainPage = () => {
         `}</style>
       </Head>
       <div className="h-screen w-screen flex items-center flex-col overflow-y-auto min-h-screen">
-        <BoxComponent styles="bg-[url('/cover.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-end min-h-[600px]"></BoxComponent>
+        <BoxComponent
+          styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[300px]
+          bg-contain sm:bg-cover"
+        />
+
         <BoxComponent>
           <p className="text-center text-lg sm:text-xl md:text-2xl leading-relaxed font-poppins text-gray-800">
             🌿✨ <strong>You’re invited to a magical evening!</strong> ✨🌿
@@ -37,7 +41,7 @@ const MainPage = () => {
             <br />
             Let’s make memories as
             <span className="tracking-widest font-medium block">
-              Y S H E E &nbsp; T U R N S &nbsp; E I G H T E E N
+              Y S H E E &nbsp; T U R N S <br/> E I G H T E E N
             </span>{" "}
             💃🏼
           </p>
@@ -61,7 +65,6 @@ const MainPage = () => {
             night away! 🎶
           </p>
         </BoxComponent>
-
         {/* <BoxComponent
           styles="
           min-h-[500px]
@@ -79,7 +82,6 @@ const MainPage = () => {
           </div>
 
 </BoxComponent> */}
-
         {/* Photo Album ========================================== */}
         <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1]">
           <div className="flex justify-center w-full">
@@ -143,8 +145,7 @@ const MainPage = () => {
             />
           </div>
         </BoxComponent>
-
-        <BoxComponent  styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] bg-[url('/grass2.png')] bg-no-repeat bg-bottom bg-contain">
+        <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] bg-[url('/grass2.png')] bg-no-repeat bg-bottom bg-contain">
           <p className="text-center text-lg sm:text-xl md:text-2xl leading-relaxed font-poppins text-gray-800">
             🌿✨ <strong>SEE YOU AT</strong> ✨🌿
           </p>
@@ -225,7 +226,7 @@ const MainPage = () => {
             rel="noopener noreferrer"
             className="text-lg text-pink-700 border border-pink-700 px-5 py-2 rounded-md hover:bg-pink-700 hover:text-white transition-colors duration-200 w-[300px] text-center block"
           >
-            Join Us!
+            Join Us! (Click to RSVP)
           </a>
 
           <p className="text-center text-3xl sm:text-4xl font-serif italic text-gray-800 mt-20 mb-12 px-4 animate-fade-in">
@@ -233,7 +234,6 @@ const MainPage = () => {
             <span className="text-pink-600">✨</span>
           </p>
         </BoxComponent>
-        
       </div>
     </>
   );
