@@ -24,7 +24,7 @@ const MainPage = () => {
       <div className="h-screen w-screen flex items-center flex-col overflow-y-auto min-h-screen">
         <BoxComponent
           styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[285px]
-          bg-contain sm:bg-cover bg-top" 
+          bg-contain sm:bg-cover bg-top"
         />
 
         <BoxComponent>
@@ -41,7 +41,7 @@ const MainPage = () => {
             <br />
             Let’s make memories as
             <span className="tracking-widest font-medium block">
-              Y S H E E &nbsp; T U R N S <br/> E I G H T E E N
+              Y S H E E &nbsp; T U R N S <br /> E I G H T E E N
             </span>{" "}
             💃🏼
           </p>
@@ -83,7 +83,7 @@ const MainPage = () => {
 
 </BoxComponent> */}
         {/* Photo Album ========================================== */}
-     
+
         <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] bg-[url('/grass2.png')] bg-no-repeat bg-bottom bg-contain">
           <p className="text-center text-lg sm:text-xl md:text-2xl leading-relaxed font-poppins text-gray-800">
             🌿✨ <strong>SEE YOU AT</strong> ✨🌿
@@ -102,7 +102,6 @@ const MainPage = () => {
 
             {/* Image Section */}
             <div className="flex flex-wrap justify-center gap-4">
-             
               <Image
                 src="/images/address-2.jpg"
                 alt="Yshee 18"
@@ -112,16 +111,6 @@ const MainPage = () => {
                 priority
               />
             </div>
-
-               <Cotillions />
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfoPYi5bUUrssRjXyxYYTlxKKV81hOqGyU3t4ZXPAhSXJoYVQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lg bg-pink-700 text-white border border-pink-700 px-5 py-2 rounded-md hover:bg-white hover:text-pink-700 transition-colors duration-200 w-[300px] text-center block"
-          >
-            Join Us! (Click to RSVP)
-          </a>
 
             {/* Details Section */}
             <div className="text-center px-4 max-w-xl">
@@ -152,69 +141,78 @@ const MainPage = () => {
             </video>
           </div>
 
-             <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] shadow-none">
-          <div className="flex justify-center w-full">
-            <Image
-              src="/Yshee-2.jpg"
-              alt="Yshee 18"
-              width={550}
-              height={450}
-              className="rounded-xl shadow-lg"
-              priority
-            />
-          </div>
-          {/* Row 1: 2 Images */}
-          <div className="flex flex-col gap-4 md:flex-row">
-            <Image
-              src="/images/yshee-3.jpg"
-              alt="Yshee 18"
-              width={280}
-              height={180}
-              className="rounded-md shadow-md"
-              priority
-            />
-            <Image
-              src="/images/yshee-4.jpg"
-              alt="Yshee 18"
-              width={280}
-              height={180}
-              className="rounded-md shadow-md"
-              priority
-            />
-          </div>
+          <BoxComponent styles="flex flex-col items-center gap-6 py-6 bg-[#F4E7E1] shadow-none">
+            <div className="flex justify-center w-full">
+              <Image
+                src="/Yshee-2.jpg"
+                alt="Yshee 18"
+                width={550}
+                height={450}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
+            {/* Row 1: 2 Images */}
+            <div className="flex flex-col gap-4 md:flex-row">
+              <Image
+                src="/images/yshee-3.jpg"
+                alt="Yshee 18"
+                width={280}
+                height={180}
+                className="rounded-md shadow-md"
+                priority
+              />
+              <Image
+                src="/images/yshee-4.jpg"
+                alt="Yshee 18"
+                width={280}
+                height={180}
+                className="rounded-md shadow-md"
+                priority
+              />
+            </div>
 
-          {/* Row 2: Bigger Center Image */}
-          <div className="flex justify-center w-full">
-            <Image
-              src="/11.jpg"
-              alt="Yshee 18"
-              width={550}
-              height={450}
-              className="rounded-xl shadow-lg"
-              priority
-            />
-          </div>
+            {/* Row 2: Bigger Center Image */}
+            <div className="flex justify-center w-full">
+              <Image
+                src="/11.jpg"
+                alt="Yshee 18"
+                width={550}
+                height={450}
+                className="rounded-xl shadow-lg"
+                priority
+              />
+            </div>
 
-          <div className="flex flex-col gap-4 md:flex-row">
-            <Image
-              src="/images/yshee-6.jpg"
-              alt="Yshee 18"
-              width={280}
-              height={180}
-              className="rounded-md shadow-md"
-              priority
-            />
-            <Image
-              src="/images/yshee-7.jpg"
-              alt="Yshee 18"
-              width={280}
-              height={180}
-              className="rounded-md shadow-md"
-              priority
-            />
-          </div>
-        </BoxComponent>
+            <div className="flex flex-col gap-4 md:flex-row">
+              <Image
+                src="/images/yshee-6.jpg"
+                alt="Yshee 18"
+                width={280}
+                height={180}
+                className="rounded-md shadow-md"
+                priority
+              />
+              <Image
+                src="/images/yshee-7.jpg"
+                alt="Yshee 18"
+                width={280}
+                height={180}
+                className="rounded-md shadow-md"
+                priority
+              />
+            </div>
+          </BoxComponent>
 
+          <Cotillions />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfoPYi5bUUrssRjXyxYYTlxKKV81hOqGyU3t4ZXPAhSXJoYVQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg bg-pink-700 text-white border border-pink-700 px-5 py-2 rounded-md hover:bg-white hover:text-pink-700 transition-colors duration-200 w-[300px] text-center block"
+          >
+            Join Us! (Click to RSVP)
+          </a>
           <p className="text-xl sm:text-2xl leading-relaxed text-center text-gray-800 max-w-3xl mx-auto mt-10 px-4">
             Your presence is the greatest gift of all. But if you’d like to
             share a little more,
@@ -223,8 +221,6 @@ const MainPage = () => {
               cash gifts are truly appreciated. 💌
             </span>
           </p>
-
-       
 
           <p className="text-center text-3xl sm:text-4xl font-serif italic text-gray-800 mt-20 mb-12 px-4 animate-fade-in">
             Let’s make it a night to remember{" "}
