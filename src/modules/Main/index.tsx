@@ -23,7 +23,7 @@ const MainPage = () => {
       </Head>
       <div className="h-screen w-screen flex items-center flex-col overflow-y-auto min-h-screen">
         <BoxComponent
-          styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[300px]
+          styles="bg-[url('/cover.jpg')] bg-center bg-no-repeat flex flex-col justify-end  md:min-h-[600px] min-h-[225px]
           bg-contain sm:bg-cover"
         />
 
